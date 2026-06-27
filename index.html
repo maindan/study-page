@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Study — app de desktop para Windows para estudar programação com foco: 9 módulos, exercícios corrigidos automaticamente, offline, grátis e open source." />
+  <title>Study — Aprenda programação com foco no desktop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Fundo animado -->
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#" class="brand">
+        <span class="brand-mark">S</span>
+        <span class="brand-name">Study</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#modulos">Módulos</a>
+        <a href="#desktop">Por que desktop</a>
+        <a href="#validacao">Correção automática</a>
+        <a href="#recursos">Recursos</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#download" class="btn btn-ghost">Open source</a>
+        <a href="#download" class="btn btn-primary">Baixar para Windows</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <span class="pill"><span class="dot"></span> Grátis · Open source · Offline</span>
+          <h1>Estude programação com <span class="grad-text">foco</span>, direto no seu computador</h1>
+          <p class="lead">
+            O Study é um aplicativo de <strong>desktop para Windows</strong> que reúne
+            9 trilhas de programação — de Linux a Android — com documentação,
+            atividades e exercícios <strong>corrigidos automaticamente</strong>. Sem abas,
+            sem distração: só você e o que precisa aprender.
+          </p>
+          <div class="hero-cta">
+            <a href="#download" class="btn btn-primary btn-lg">⬇ Baixar para Windows</a>
+            <a href="#modulos" class="btn btn-ghost btn-lg">Ver os módulos</a>
+          </div>
+          <div class="hero-meta">
+            <span class="meta-chip">✓ 100% grátis para sempre</span>
+            <span class="meta-chip">✓ Sem login</span>
+            <span class="meta-chip">✓ Funciona offline</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="mock">
+            <div class="mock-glow"></div>
+            <div class="mock-bar">
+              <span></span><span></span><span></span>
+              <em>Study — Algoritmos</em>
+            </div>
+            <div class="mock-app">
+              <aside class="mock-side">
+                <div class="ms-item">🐧 Linux</div>
+                <div class="ms-item">☕ Java</div>
+                <div class="ms-item">🟣 Kotlin</div>
+                <div class="ms-item active">⚙️ Algoritmos</div>
+                <div class="ms-item">🗄️ SQL</div>
+                <div class="ms-item">📱 Android</div>
+              </aside>
+              <div class="mock-main">
+                <p class="mm-title">Arrays — Fácil · Desafio</p>
+                <pre class="mm-code"><code><span class="k">class</span> <span class="t">Solution</span> {
+  <span class="k">int</span>[] <span class="f">twoSum</span>(<span class="k">int</span>[] nums, <span class="k">int</span> alvo) {
+    <span class="c">// sua solução aqui</span>
+  }
+}</code></pre>
+                <div class="mm-tests">
+                  <span class="mm-pass">✅ Caso 1</span>
+                  <span class="mm-pass">✅ Caso 2</span>
+                  <span class="mm-pass">✅ Caso 3</span>
+                </div>
+                <div class="mm-result ok">Testes passaram — compilado no JDK</div>
+                <div class="mm-progress"><span></span></div>
+                <p class="mm-progress-label">Progresso salvo automaticamente (SQLite local)</p>
+              </div>
+            </div>
+          </div>
+          <div class="float-badge fb-1">🔌 Funciona offline</div>
+          <div class="float-badge fb-2">🆓 Grátis & open source</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Números reais -->
+    <section class="section stats-section" id="numeros">
+      <div class="container">
+        <div class="stats reveal">
+          <div class="stat">
+            <p class="stat-num"><span data-count="9">0</span></p>
+            <p class="stat-label">módulos de estudo</p>
+          </div>
+          <div class="stat">
+            <p class="stat-num"><span data-count="47">0</span></p>
+            <p class="stat-label">desafios de algoritmos corrigidos</p>
+          </div>
+          <div class="stat">
+            <p class="stat-num"><span data-count="42">0</span></p>
+            <p class="stat-label">práticas de terminal Linux</p>
+          </div>
+          <div class="stat">
+            <p class="stat-num"><span data-count="99">0</span></p>
+            <p class="stat-label">perguntas em 8 quizzes</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Módulos -->
+    <section class="section" id="modulos">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Módulos</span>
+          <h2>9 trilhas, do terminal ao <span class="grad-text">Android nativo</span></h2>
+          <p>Cada módulo tem documentação, atividades e exercícios práticos. Você cresce na ordem que quiser.</p>
+        </div>
+        <div class="features">
+          <article class="feature reveal">
+            <div class="feat-icon">🐧</div>
+            <h3>Linux</h3>
+            <p>Sistema de arquivos, terminal, comandos essenciais, permissões e shell scripting. A base de qualquer desenvolvedor.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feat-icon">☕</div>
+            <h3>Java</h3>
+            <p>Do zero ao intermediário: sintaxe, controle de fluxo, POO, estruturas de dados e exceções. A linguagem base do Android.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feat-icon">🟣</div>
+            <h3>Kotlin</h3>
+            <p>Kotlin moderno: sintaxe concisa, null safety, funções, classes e coleções. A linguagem oficial para Android.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feat-icon">🧩</div>
+            <h3>Orientação a Objetos</h3>
+            <p>Os pilares da POO — encapsulamento, herança, polimorfismo, abstração — e os princípios SOLID.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feat-icon">⚙️</div>
+            <h3>Algoritmos</h3>
+            <p>Resolução de problemas em Java com foco em arrays: padrões para memorizar e 47 desafios corrigidos automaticamente, em três níveis.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feat-icon">🗄️</div>
+            <h3>SQL e Bancos Relacionais</h3>
+            <p>Modelagem, normalização, consultas, JOINs, agregações e manipulação de dados em bancos relacionais.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feat-icon">🤖</div>
+            <h3>Sistema Android</h3>
+            <p>Como o Android funciona por dentro: história, AOSP, arquitetura em camadas, kernel Linux, ART e segurança.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feat-icon">🏛️</div>
+            <h3>Arquitetura Android</h3>
+            <p>Componentes, Intents, Manifest, padrões de arquitetura (MVC, MVP, MVVM, Clean) e Jetpack.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feat-icon">📱</div>
+            <h3>Dev Android Nativo</h3>
+            <p>Do ambiente ao app completo: layouts, ciclo de vida, RecyclerView, Room/SQLite, APIs nativas, networking e projeto final.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Por que desktop -->
+    <section class="section" id="desktop">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Feito para o computador</span>
+          <h2>Um app de <span class="grad-text">desktop</span>, não mais uma aba no navegador</h2>
+          <p>O Study foi criado especificamente para Windows porque é no computador que o estudo de programação acontece — e é onde dá para manter o foco.</p>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <div class="step-num">01</div>
+            <h3>Foco sem distração</h3>
+            <p>Uma janela dedicada só ao estudo, longe das mil abas, notificações e do feed do navegador.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step-num">02</div>
+            <h3>Tudo no seu PC</h3>
+            <p>Funciona offline e sem login. Seu progresso fica salvo localmente em um banco SQLite, no seu computador.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step-num">03</div>
+            <h3>Instalação simples</h3>
+            <p>Instalador para Windows que cria atalho na área de trabalho e instala no seu perfil — sem precisar de permissão de administrador.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Correção automática -->
+    <section class="section" id="validacao">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Correção automática</span>
+          <h2>Você pratica de verdade e o app <span class="grad-text">corrige na hora</span></h2>
+          <p>Cada tipo de exercício é validado de um jeito — nada de só ler e marcar como feito.</p>
+        </div>
+        <div class="validation">
+          <article class="vcard reveal">
+            <h3><span class="vtag">Algoritmos · Java</span></h3>
+            <p>Você escreve o código e o app <strong>compila e executa no JDK</strong> contra vários casos de teste, comparando a saída. ✅ / ❌ na hora.</p>
+          </article>
+          <article class="vcard reveal">
+            <h3><span class="vtag">Linux</span></h3>
+            <p>Você digita o comando do terminal e ele é validado contra as respostas aceitas. 42 práticas de navegação, arquivos e busca de texto.</p>
+          </article>
+          <article class="vcard reveal">
+            <h3><span class="vtag">Quizzes</span></h3>
+            <p>Múltipla escolha e resposta curta corrigidas na hora, com explicação. 8 quizzes de revisão, 99 perguntas no total.</p>
+          </article>
+          <article class="vcard reveal">
+            <h3><span class="vtag">Leitura</span></h3>
+            <p>As atividades de cada documentação viram checkboxes, com barra de progresso por módulo. Tudo persistido entre as sessões.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recursos -->
+    <section class="section" id="recursos">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Recursos</span>
+          <h2>Simples, local e <span class="grad-text">livre</span></h2>
+        </div>
+        <div class="features">
+          <article class="feature reveal">
+            <div class="feat-icon">🆓</div>
+            <h3>Grátis para sempre</h3>
+            <p>Sistema totalmente gratuito e open source, disponibilizado de graça para sempre. Sem planos, sem assinatura, sem pegadinha.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feat-icon">🔌</div>
+            <h3>Offline e sem login</h3>
+            <p>Não precisa de internet nem de conta. Abra o app e comece a estudar — seus dados nunca saem do seu computador.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feat-icon">💾</div>
+            <h3>Progresso salvo localmente</h3>
+            <p>Tudo que você completa fica guardado em um banco SQLite no seu perfil, e continua de onde parou na próxima sessão.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feat-icon">📖</div>
+            <h3>Conteúdo em português</h3>
+            <p>Documentação, atividades e exercícios escritos em português, do básico ao avançado, em cada um dos 9 módulos.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feat-icon">🧑‍💻</div>
+            <h3>Editor de código embutido</h3>
+            <p>Resolva os desafios de Java dentro do próprio app, com destaque de sintaxe e botão de rodar os testes.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feat-icon">🔓</div>
+            <h3>Código aberto</h3>
+            <p>Construído com Next.js, React e Electron. O código é aberto — dá para inspecionar, aprender e contribuir.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA / Download -->
+    <section class="cta-section" id="download">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div class="cta-glow"></div>
+          <h2>Baixe o Study e comece a estudar hoje</h2>
+          <p>Aplicativo de desktop para Windows. Grátis, open source e gratuito para sempre — sem login e sem conexão obrigatória.</p>
+          <div class="hero-cta center">
+            <a href="Study Setup 1.0.0.exe" download class="btn btn-primary btn-lg">⬇ Baixar para Windows (v1.0.0)</a>
+          </div>
+          <p class="cta-fine">Para Windows · O instalador cria atalho na área de trabalho e não exige administrador.<br>Para os desafios de Java é necessário ter o JDK 17+ instalado — o resto funciona sem ele.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="brand">
+          <span class="brand-mark">S</span>
+          <span class="brand-name">Study</span>
+        </a>
+        <p>App de desktop para estudar programação com foco. Grátis e open source, para sempre.</p>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h4>Conteúdo</h4>
+          <a href="#modulos">Módulos</a>
+          <a href="#validacao">Correção automática</a>
+          <a href="#recursos">Recursos</a>
+        </div>
+        <div>
+          <h4>App</h4>
+          <a href="#desktop">Por que desktop</a>
+          <a href="#download">Download para Windows</a>
+          <a href="#download">Open source</a>
+        </div>
+        <div>
+          <h4>Feito com</h4>
+          <a href="#">Electron</a>
+          <a href="#">Next.js · React</a>
+          <a href="#">SQLite (sql.js)</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Study · por Daniel Lima · Open source e grátis para sempre.</p>
+      <div class="socials">
+        <a href="#" aria-label="Repositório">{ }</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
